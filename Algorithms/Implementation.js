@@ -31,3 +31,14 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
         console.log(appleCount)
         console.log(orangeCount)
     }
+
+    function kangaroo(x1, v1, x2, v2) {
+        if(v2 < v1) {
+            while(x1 <= x2){
+                if(x1 === x2) return('YES')
+                x1 += v1
+                x2 += v2
+            }
+        }
+        return('NO')    
+    }
